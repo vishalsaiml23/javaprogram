@@ -10,12 +10,16 @@ public class ROW_COLUMN_MAX {
 	 System.out.print("Enter Column Size : ");
 	 int column = sc.nextInt();
 	 
+	 //Get Array Input From User
+	 
 	 int arr [][] = new int[row][column];
 	 for(int i = 0; i < row; i++) {
 		 for(int j = 0; j < column; j++) {
 		 arr[i][j] = sc.nextInt();
 	 }
 	 }
+	 
+	 // Row Wise Maximum
 	 
 	for (int i = 0; i < row; i++) {
 		int rmax = arr[i][0];
@@ -27,7 +31,7 @@ public class ROW_COLUMN_MAX {
 		System.out.println("Row ["+(i+1) +"] Maximum : "+ rmax);
 	}
 	
-	// Column wise Maxium Number
+	// Column wise Maximum Number
 	
 	for (int i = 0; i < row; i++) {
 		int cmax = arr[0][i];
