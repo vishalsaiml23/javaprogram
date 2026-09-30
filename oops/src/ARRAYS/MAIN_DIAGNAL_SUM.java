@@ -22,7 +22,7 @@ public static void main(String[] args) {
 	 // Main Diagnal Element Sum
 	 int sum = 0;
 	 for(int i = 0; i < row; i++) {
-		 sum += arr[i][i];
+		 sum += arr[i][row-1-i];
 	 }
 	 System.out.println("Main Diagnal Element Sum : " + sum);
 }
